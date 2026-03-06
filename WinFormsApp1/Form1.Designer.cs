@@ -1,4 +1,4 @@
-﻿namespace Blackjack
+﻿namespace WinFormsApp1
 {
     partial class Form1
     {
@@ -29,55 +29,53 @@
         private void InitializeComponent()
         {
             btnAdd = new Button();
-            lstNames = new ListBox();
-            txtName = new TextBox();
             label1 = new Label();
+            txtName = new TextBox();
+            lstNames = new ListBox();
             SuspendLayout();
             // 
             // btnAdd
             // 
-            btnAdd.Location = new Point(231, 173);
+            btnAdd.Location = new Point(138, 55);
             btnAdd.Name = "btnAdd";
-            btnAdd.Size = new Size(94, 29);
+            btnAdd.Size = new Size(100, 23);
             btnAdd.TabIndex = 0;
-            btnAdd.Text = "Add Name";
+            btnAdd.Text = "Add name";
             btnAdd.UseVisualStyleBackColor = true;
-            btnAdd.Click += btnAdd_Click_1;
-            // 
-            // lstNames
-            // 
-            lstNames.FormattingEnabled = true;
-            lstNames.Location = new Point(86, 118);
-            lstNames.Name = "lstNames";
-            lstNames.Size = new Size(120, 84);
-            lstNames.TabIndex = 2;
-            lstNames.SelectedIndexChanged += listBox1_SelectedIndexChanged;
-            // 
-            // txtName
-            // 
-            txtName.Location = new Point(231, 140);
-            txtName.Name = "txtName";
-            txtName.Size = new Size(125, 27);
-            txtName.TabIndex = 3;
-            txtName.TextChanged += txtName_TextChanged;
+            btnAdd.Click += btnAdd_Click;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(89, 70);
+            label1.Location = new Point(12, 9);
             label1.Name = "label1";
             label1.Size = new Size(55, 20);
-            label1.TabIndex = 4;
+            label1.TabIndex = 1;
             label1.Text = "Names";
+            // 
+            // txtName
+            // 
+            txtName.Location = new Point(138, 26);
+            txtName.Name = "txtName";
+            txtName.Size = new Size(100, 27);
+            txtName.TabIndex = 2;
+            // 
+            // lstNames
+            // 
+            lstNames.FormattingEnabled = true;
+            lstNames.Location = new Point(12, 27);
+            lstNames.Name = "lstNames";
+            lstNames.Size = new Size(120, 84);
+            lstNames.TabIndex = 3;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(867, 482);
-            Controls.Add(label1);
-            Controls.Add(txtName);
+            ClientSize = new Size(250, 133);
             Controls.Add(lstNames);
+            Controls.Add(txtName);
+            Controls.Add(label1);
             Controls.Add(btnAdd);
             Name = "Form1";
             Text = "Names";
@@ -89,7 +87,7 @@
 
         private Button btnAdd;
         private Label label1;
-        private ListBox lstNames;
         private TextBox txtName;
+        private ListBox lstNames;
     }
 }
