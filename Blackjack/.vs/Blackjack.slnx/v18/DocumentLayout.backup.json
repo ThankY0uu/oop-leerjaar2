@@ -3,8 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{FEF71D60-5C9A-4117-B123-4D049DEFA816}|Blackjack.csproj|c:\\users\\ty_to\\source\\repos\\oop-leerjaar2\\blackjack\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{FEF71D60-5C9A-4117-B123-4D049DEFA816}|Blackjack.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+      "AbsoluteMoniker": "D:0:0:{0744C109-B950-D0D2-8881-7EE895761866}|Blackjack.csproj|c:\\users\\ty_to\\source\\repos\\oop-leerjaar2\\blackjack\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0744C109-B950-D0D2-8881-7EE895761866}|Blackjack.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0744C109-B950-D0D2-8881-7EE895761866}|Blackjack.csproj|c:\\users\\ty_to\\source\\repos\\oop-leerjaar2\\blackjack\\form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{0744C109-B950-D0D2-8881-7EE895761866}|Blackjack.csproj|solutionrelative:form1.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     }
   ],
   "DocumentGroupContainers": [
@@ -14,19 +18,32 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\Form1.cs",
               "RelativeDocumentMoniker": "Form1.cs",
-              "ToolTip": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\Form1.cs [Design]",
-              "RelativeToolTip": "Form1.cs [Design]",
+              "ToolTip": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\Form1.cs [Design]*",
+              "RelativeToolTip": "Form1.cs [Design]*",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-03T12:12:10.651Z",
+              "WhenOpened": "2026-03-05T13:16:21.285Z",
               "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Form1.cs",
+              "DocumentMoniker": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\Form1.cs",
+              "RelativeDocumentMoniker": "Form1.cs",
+              "ToolTip": "C:\\Users\\Ty_to\\source\\repos\\oop-leerjaar2\\Blackjack\\Form1.cs*",
+              "RelativeToolTip": "Form1.cs*",
+              "ViewState": "AgIAAAIAAAAAAAAAAAAxwAsAAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-05T13:13:43.196Z",
+              "EditorCaption": ""
             }
           ]
         }
