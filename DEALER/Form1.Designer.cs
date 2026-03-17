@@ -31,8 +31,6 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
-            pictureBox5 = new PictureBox();
             pictureBox6 = new PictureBox();
             btnDraw = new Button();
             btnStand = new Button();
@@ -41,61 +39,54 @@
             label2 = new Label();
             label3 = new Label();
             lblPlayerScore = new Label();
+            pictureBox5 = new PictureBox();
+            pictureBox4 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(798, 309);
+            pictureBox1.Location = new Point(494, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(125, 62);
+            pictureBox1.Size = new Size(159, 222);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(905, 40);
+            pictureBox2.Location = new Point(763, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(125, 62);
+            pictureBox2.Size = new Size(170, 222);
+            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
+            pictureBox2.Click += pictureBox2_Click;
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(747, 40);
+            pictureBox3.Location = new Point(783, 365);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(125, 62);
+            pictureBox3.Size = new Size(105, 132);
+            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
-            // 
-            // pictureBox4
-            // 
-            pictureBox4.Location = new Point(600, 40);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(125, 62);
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
-            // 
-            // pictureBox5
-            // 
-            pictureBox5.Location = new Point(455, 40);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(125, 62);
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
+            pictureBox3.Click += pictureBox3_Click;
             // 
             // pictureBox6
             // 
-            pictureBox6.Location = new Point(532, 309);
+            pictureBox6.Location = new Point(62, 21);
             pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(125, 62);
+            pictureBox6.Size = new Size(75, 77);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox6.TabIndex = 5;
             pictureBox6.TabStop = false;
+            pictureBox6.Click += pictureBox6_Click;
             // 
             // btnDraw
             // 
@@ -117,12 +108,13 @@
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(149, 377);
+            btnNewGame.Location = new Point(143, 392);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(94, 29);
             btnNewGame.TabIndex = 8;
             btnNewGame.Text = "New game";
             btnNewGame.UseVisualStyleBackColor = true;
+            btnNewGame.Click += btnNewGame_Click;
             // 
             // lblDealerScore
             // 
@@ -132,6 +124,7 @@
             lblDealerScore.Size = new Size(50, 20);
             lblDealerScore.TabIndex = 9;
             lblDealerScore.Text = "label1";
+            lblDealerScore.Click += lblDealerScore_Click;
             // 
             // label2
             // 
@@ -154,17 +147,36 @@
             // lblPlayerScore
             // 
             lblPlayerScore.AutoSize = true;
-            lblPlayerScore.Location = new Point(706, 130);
+            lblPlayerScore.Location = new Point(677, 247);
             lblPlayerScore.Name = "lblPlayerScore";
             lblPlayerScore.Size = new Size(50, 20);
             lblPlayerScore.TabIndex = 12;
             lblPlayerScore.Text = "label4";
             // 
+            // pictureBox5
+            // 
+            pictureBox5.Location = new Point(143, 21);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(81, 77);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 4;
+            pictureBox5.TabStop = false;
+            // 
+            // pictureBox4
+            // 
+            pictureBox4.Location = new Point(548, 365);
+            pictureBox4.Name = "pictureBox4";
+            pictureBox4.Size = new Size(105, 132);
+            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox4.TabIndex = 3;
+            pictureBox4.TabStop = false;
+            pictureBox4.Click += pictureBox4_Click;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1344, 450);
+            ClientSize = new Size(1344, 512);
             Controls.Add(lblPlayerScore);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -183,9 +195,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -195,8 +207,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox6;
         private Button btnDraw;
         private Button btnStand;
@@ -205,5 +215,7 @@
         private Label label2;
         private Label label3;
         private Label lblPlayerScore;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox4;
     }
 }
