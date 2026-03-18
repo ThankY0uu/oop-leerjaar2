@@ -2,9 +2,22 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DEALER
+namespace DEALER.classes
 {
-    internal class Class1
+    public enum GameState { Bet, Deal, PlayerTurn, DealerTurn, GameOver }
+
+    public class Table
     {
+        private Shoe shoe;
+        private Dealer dealer;
+        private List<Player> players;
+        private GameState gameState;
+        public int chips { get; set; }
+        public int points { get; set; }
+        public int activePlayerIndex { get; set; }
+
+        public Table(int shoeSize, int amountOfPlayers) { }
+
+        public void NextMove(string input) { }
     }
 }

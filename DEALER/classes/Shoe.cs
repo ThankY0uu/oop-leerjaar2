@@ -2,9 +2,13 @@
 using System.Collections.Generic;
 using System.Text;
 
-namespace DEALER
+namespace DEALER.classes
 {
-    internal class Table
+    public class Shoe
     {
+        private List<Deck> decks = new List<Deck>();
+
+        public void Shuffle() { }
+        public Deck Draw() { return null; }
     }
 }
