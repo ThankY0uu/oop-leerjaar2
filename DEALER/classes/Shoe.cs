@@ -1,14 +1,27 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
+﻿using System.Collections.Generic;
 
 namespace DEALER.classes
 {
     public class Shoe
     {
-        private List<Deck> decks = new List<Deck>();
+        private List<Card> allCards = new List<Card>();
 
-        public void Shuffle() { }
-        public Deck Draw() { return null; }
+        public Shoe()
+        {
+            Deck myDeck = new Deck();
+            myDeck.Shuffle();
+            for (int i = 0; i < 52; i++)
+            {
+                allCards.Add(myDeck.Draw());
+            }
+        }
+
+        public Card Draw()
+        {
+            if (allCards.Count == 0) return null!;
+            Card topCard = allCards[0];
+            allCards.RemoveAt(0);
+            return topCard;
+        }
     }
 }

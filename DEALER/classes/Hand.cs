@@ -1,18 +1,23 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
+﻿using System.Collections.Generic;
 
 namespace DEALER.classes
 {
     public class Hand
     {
-        public bool CanPlay { get; set; }
-        public int Total { get; set; }
-        private List<Card> cards = new List<Card>();
-        public bool hasPassed { get; set; }
+        public List<Card> cards = new List<Card>();
 
-        public bool Hit(Card card) { return false; }
-        public void Stand() { }
+        public void AddCard(Card newCard)
+        {
+            if (newCard != null) cards.Add(newCard);
+        }
+
+        public int CalculateScore()
+        {
+            int total = 0;
+            foreach (Card c in cards) total += c.Value;
+            return total;
+        }
+
+        public void Clear() { cards.Clear(); }
     }
 }

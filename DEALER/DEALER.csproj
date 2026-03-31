@@ -183,6 +183,9 @@
     <None Update="kaarten\king_of_spades2.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
+    <None Update="kaarten\minionback_1024x.png">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
     <None Update="kaarten\queen_of_clubs.png">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
