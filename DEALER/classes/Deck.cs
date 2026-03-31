@@ -1,10 +1,55 @@
 ﻿using System;
 using System.Collections.Generic;
-using System.Text;
 
 namespace DEALER.classes
 {
-    internal class Table
+    public class Deck
     {
+        private List<Card> cards = new List<Card>();
+
+        public Deck()
+        {
+            string[] suits = { "clubs", "diamonds", "hearts", "spades" };
+            string[] ranks = { "ace", "2", "3", "4", "5", "6", "7", "8", "9", "10", "jack", "queen", "king" };
+
+            for (int s = 0; s < 4; s++)
+            {
+                for (int r = 0; r < 13; r++)
+                {
+                    Card newCard = new Card();
+                    newCard.suit = (Suit)s;
+                    newCard.rank = (Rank)r;
+
+                    // Blackjack values
+                    if (r == 0) newCard.Value = 11; // Ace
+                    else if (r >= 9) newCard.Value = 10; // 10, J, Q, K
+                    else newCard.Value = r + 1; // 2-9
+
+                    newCard.ImageName = ranks[r] + "_of_" + suits[s];
+                    cards.Add(newCard);
+                }
+            }
+        }
+
+        public void Shuffle()
+        {
+            Random rng = new Random();
+            for (int i = 0; i < 1000; i++)
+            {
+                int p1 = rng.Next(cards.Count);
+                int p2 = rng.Next(cards.Count);
+                Card temp = cards[p1];
+                cards[p1] = cards[p2];
+                cards[p2] = temp;
+            }
+        }
+
+        public Card Draw()
+        {
+            if (cards.Count == 0) return null!;
+            Card picked = cards[0];
+            cards.RemoveAt(0);
+            return picked;
+        }
     }
 }

@@ -51,18 +51,19 @@
             // 
             // pictureBox1
             // 
-            pictureBox1.Location = new Point(494, 12);
+            pictureBox1.Location = new Point(449, 12);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(159, 222);
+            pictureBox1.Size = new Size(197, 257);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 0;
             pictureBox1.TabStop = false;
+            pictureBox1.Click += pictureBox1_Click_1;
             // 
             // pictureBox2
             // 
-            pictureBox2.Location = new Point(763, 12);
+            pictureBox2.Location = new Point(703, 12);
             pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(170, 222);
+            pictureBox2.Size = new Size(197, 257);
             pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox2.TabIndex = 1;
             pictureBox2.TabStop = false;
@@ -70,9 +71,9 @@
             // 
             // pictureBox3
             // 
-            pictureBox3.Location = new Point(783, 365);
+            pictureBox3.Location = new Point(703, 371);
             pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(105, 132);
+            pictureBox3.Size = new Size(197, 257);
             pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox3.TabIndex = 2;
             pictureBox3.TabStop = false;
@@ -90,7 +91,7 @@
             // 
             // btnDraw
             // 
-            btnDraw.Location = new Point(62, 325);
+            btnDraw.Location = new Point(12, 573);
             btnDraw.Name = "btnDraw";
             btnDraw.Size = new Size(94, 29);
             btnDraw.TabIndex = 6;
@@ -99,7 +100,7 @@
             // 
             // btnStand
             // 
-            btnStand.Location = new Point(248, 325);
+            btnStand.Location = new Point(194, 573);
             btnStand.Name = "btnStand";
             btnStand.Size = new Size(94, 29);
             btnStand.TabIndex = 7;
@@ -108,7 +109,7 @@
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(143, 392);
+            btnNewGame.Location = new Point(102, 608);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(94, 29);
             btnNewGame.TabIndex = 8;
@@ -119,7 +120,7 @@
             // lblDealerScore
             // 
             lblDealerScore.AutoSize = true;
-            lblDealerScore.Location = new Point(696, 401);
+            lblDealerScore.Location = new Point(330, 582);
             lblDealerScore.Name = "lblDealerScore";
             lblDealerScore.Size = new Size(50, 20);
             lblDealerScore.TabIndex = 9;
@@ -147,7 +148,7 @@
             // lblPlayerScore
             // 
             lblPlayerScore.AutoSize = true;
-            lblPlayerScore.Location = new Point(677, 247);
+            lblPlayerScore.Location = new Point(330, 283);
             lblPlayerScore.Name = "lblPlayerScore";
             lblPlayerScore.Size = new Size(50, 20);
             lblPlayerScore.TabIndex = 12;
@@ -164,9 +165,9 @@
             // 
             // pictureBox4
             // 
-            pictureBox4.Location = new Point(548, 365);
+            pictureBox4.Location = new Point(449, 371);
             pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(105, 132);
+            pictureBox4.Size = new Size(197, 257);
             pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox4.TabIndex = 3;
             pictureBox4.TabStop = false;
@@ -176,7 +177,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(1344, 512);
+            ClientSize = new Size(1344, 721);
             Controls.Add(lblPlayerScore);
             Controls.Add(label3);
             Controls.Add(label2);
