@@ -1,16 +1,31 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Text;
-
-namespace DEALER.classes
+﻿namespace DEALER.classes
 {
     public class Dealer
     {
-        private Hand hand = new Hand();
+        public Hand hand = new Hand(); // de hand van de dealer
 
-        public void Hit(Card card) { }
-        public void Stand() { }
-        public Card Deal(Deck deck) { return null; }
-        public void Reset() { }
+        // Voeg een kaart toe aan de hand
+        public void Hit(Card card)
+        {
+            hand.AddCard(card);
+        }
+
+        // Dealer stopt met kaarten trekken
+        public void Stand()
+        {
+            // dealer stopt
+        }
+
+        // Trek een kaart uit de deck en geef hem terug
+        public Card Deal(Shoe shoe)
+        {
+            return shoe.Draw();
+        }
+
+        // Reset de dealer voor een nieuwe ronde
+        public void Reset()
+        {
+            hand.Clear();
+        }
     }
 }
