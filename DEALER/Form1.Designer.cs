@@ -31,7 +31,6 @@
             pictureBox1 = new PictureBox();
             pictureBox2 = new PictureBox();
             pictureBox3 = new PictureBox();
-            pictureBox6 = new PictureBox();
             btnDraw = new Button();
             btnStand = new Button();
             btnNewGame = new Button();
@@ -39,14 +38,16 @@
             label2 = new Label();
             label3 = new Label();
             lblPlayerScore = new Label();
-            pictureBox5 = new PictureBox();
             pictureBox4 = new PictureBox();
+            btnShuffle = new Button();
+            pictureBox5 = new PictureBox();
+            pictureBox6 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
             SuspendLayout();
             // 
             // pictureBox1
@@ -79,19 +80,9 @@
             pictureBox3.TabStop = false;
             pictureBox3.Click += pictureBox3_Click;
             // 
-            // pictureBox6
-            // 
-            pictureBox6.Location = new Point(62, 21);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(75, 77);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 5;
-            pictureBox6.TabStop = false;
-            pictureBox6.Click += pictureBox6_Click;
-            // 
             // btnDraw
             // 
-            btnDraw.Location = new Point(12, 573);
+            btnDraw.Location = new Point(12, 546);
             btnDraw.Name = "btnDraw";
             btnDraw.Size = new Size(94, 29);
             btnDraw.TabIndex = 6;
@@ -100,16 +91,17 @@
             // 
             // btnStand
             // 
-            btnStand.Location = new Point(194, 573);
+            btnStand.Location = new Point(12, 511);
             btnStand.Name = "btnStand";
             btnStand.Size = new Size(94, 29);
             btnStand.TabIndex = 7;
             btnStand.Text = "Stand";
             btnStand.UseVisualStyleBackColor = true;
+            btnStand.Click += btnStand_Click;
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(102, 608);
+            btnNewGame.Location = new Point(12, 581);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(94, 29);
             btnNewGame.TabIndex = 8;
@@ -154,15 +146,6 @@
             lblPlayerScore.TabIndex = 12;
             lblPlayerScore.Text = "label4";
             // 
-            // pictureBox5
-            // 
-            pictureBox5.Location = new Point(143, 21);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(81, 77);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 4;
-            pictureBox5.TabStop = false;
-            // 
             // pictureBox4
             // 
             pictureBox4.Location = new Point(449, 371);
@@ -173,11 +156,42 @@
             pictureBox4.TabStop = false;
             pictureBox4.Click += pictureBox4_Click;
             // 
+            // btnShuffle
+            // 
+            btnShuffle.Location = new Point(3, 616);
+            btnShuffle.Name = "btnShuffle";
+            btnShuffle.Size = new Size(94, 29);
+            btnShuffle.TabIndex = 13;
+            btnShuffle.Text = "shuffle";
+            btnShuffle.UseVisualStyleBackColor = true;
+            // 
+            // pictureBox5
+            // 
+            pictureBox5.Location = new Point(54, 12);
+            pictureBox5.Name = "pictureBox5";
+            pictureBox5.Size = new Size(197, 257);
+            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox5.TabIndex = 14;
+            pictureBox5.TabStop = false;
+            pictureBox5.Click += pictureBox5_Click;
+            // 
+            // pictureBox6
+            // 
+            pictureBox6.Location = new Point(1135, 12);
+            pictureBox6.Name = "pictureBox6";
+            pictureBox6.Size = new Size(197, 257);
+            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox6.TabIndex = 15;
+            pictureBox6.TabStop = false;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1344, 721);
+            Controls.Add(pictureBox6);
+            Controls.Add(pictureBox5);
+            Controls.Add(btnShuffle);
             Controls.Add(lblPlayerScore);
             Controls.Add(label3);
             Controls.Add(label2);
@@ -185,8 +199,6 @@
             Controls.Add(btnNewGame);
             Controls.Add(btnStand);
             Controls.Add(btnDraw);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
             Controls.Add(pictureBox4);
             Controls.Add(pictureBox3);
             Controls.Add(pictureBox2);
@@ -196,9 +208,9 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -208,7 +220,6 @@
         private PictureBox pictureBox1;
         private PictureBox pictureBox2;
         private PictureBox pictureBox3;
-        private PictureBox pictureBox6;
         private Button btnDraw;
         private Button btnStand;
         private Button btnNewGame;
@@ -216,7 +227,9 @@
         private Label label2;
         private Label label3;
         private Label lblPlayerScore;
-        private PictureBox pictureBox5;
         private PictureBox pictureBox4;
+        private Button btnShuffle;
+        private PictureBox pictureBox5;
+        private PictureBox pictureBox6;
     }
 }
