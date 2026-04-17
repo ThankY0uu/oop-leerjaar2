@@ -4,25 +4,25 @@ namespace DEALER.classes
 {
     public class Shoe
     {
-        private List<Card> allCards = new List<Card>();
+        public List<Deck> decks = new List<Deck>();
 
         public Shoe()
         {
-            Deck myDeck = new Deck();
-            myDeck.Shuffle();
+            decks.Add(new Deck());
+        }
 
-            for (int i = 0; i < 52; i++)
+        public void Shuffle()
+        {
+            foreach (Deck d in decks)
             {
-                allCards.Add(myDeck.Draw());
+                d.Shuffle();
             }
         }
 
-        public Card Draw()
+        public Deck Draw()
         {
-            if (allCards.Count == 0) return null;
-            Card topCard = allCards[0];
-            allCards.RemoveAt(0);
-            return topCard;
+            if (decks.Count == 0) return null;
+            return decks[0];
         }
     }
 }
