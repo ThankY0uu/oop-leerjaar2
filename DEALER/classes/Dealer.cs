@@ -6,17 +6,17 @@
 
         public void Hit(Card card)
         {
-            hand.AddCard(card);
+            hand.Hit(card);
         }
 
         public void Stand()
         {
-            // dealer stopt
+            hand.Stand();
         }
 
-        public Card Deal(Shoe shoe)
+        public Card Deal(Deck deck)
         {
-            return shoe.Draw();
+            return deck.Draw();
         }
 
         public void Reset()

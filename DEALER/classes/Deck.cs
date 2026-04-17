@@ -6,6 +6,7 @@ namespace DEALER.classes
     public class Deck
     {
         private List<Card> cards = new List<Card>();
+        public int CardsLeft { get; private set; }
 
         public Deck()
         {
@@ -28,6 +29,7 @@ namespace DEALER.classes
                     cards.Add(newCard);
                 }
             }
+            CardsLeft = cards.Count;
         }
 
         public void Shuffle()
@@ -48,6 +50,7 @@ namespace DEALER.classes
             if (cards.Count == 0) return null;
             Card picked = cards[0];
             cards.RemoveAt(0);
+            CardsLeft = cards.Count;
             return picked;
         }
     }

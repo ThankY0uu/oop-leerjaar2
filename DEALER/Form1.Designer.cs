@@ -70,7 +70,7 @@
             // 
             // pictureBoxDealer1
             // 
-            pictureBoxDealer1.Location = new Point(703, 371);
+            pictureBoxDealer1.Location = new Point(449, 371);
             pictureBoxDealer1.Name = "pictureBoxDealer1";
             pictureBoxDealer1.Size = new Size(197, 257);
             pictureBoxDealer1.SizeMode = PictureBoxSizeMode.Zoom;
@@ -79,7 +79,7 @@
             // 
             // pictureBoxDealer2
             // 
-            pictureBoxDealer2.Location = new Point(449, 371);
+            pictureBoxDealer2.Location = new Point(703, 371);
             pictureBoxDealer2.Name = "pictureBoxDealer2";
             pictureBoxDealer2.Size = new Size(197, 257);
             pictureBoxDealer2.SizeMode = PictureBoxSizeMode.Zoom;

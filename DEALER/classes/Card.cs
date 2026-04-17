@@ -5,9 +5,9 @@
 
     public class Card
     {
+        public int Value { get; set; }
         public Suit suit { get; set; }
         public Rank rank { get; set; }
-        public int Value { get; set; }
         public string ImageName { get; set; } = string.Empty;
 
         public override string ToString()
