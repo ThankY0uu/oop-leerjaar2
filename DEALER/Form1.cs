@@ -30,7 +30,7 @@ namespace DEALER
             drawnCard = null;
 
             // Maak alle plaatjes leeg
-            pictureBox1.Image = null;
+            pictureBoxPlayer1.Image = null;
             pictureBox2.Image = null;
             pictureBox3.Image = null;
             pictureBox4.Image = null;
@@ -78,7 +78,7 @@ namespace DEALER
             string bestand = Path.Combine(mapje, drawnCard.ImageName + ".png");
 
             // Zet de kaart in de juiste picturebox
-            if (nextCardIndex == 0) pictureBox1.Image = Image.FromFile(bestand);
+            if (nextCardIndex == 0) pictureBoxPlayer1.Image = Image.FromFile(bestand);
             if (nextCardIndex == 1) pictureBox2.Image = Image.FromFile(bestand);
             if (nextCardIndex == 2) pictureBox3.Image = Image.FromFile(bestand);
             if (nextCardIndex == 3) pictureBox4.Image = Image.FromFile(bestand);
@@ -100,7 +100,7 @@ namespace DEALER
             nextCardIndex = 0;
             drawnCard = null;
 
-            pictureBox1.Image = null;
+            pictureBoxPlayer1.Image = null;
             pictureBox2.Image = null;
             pictureBox3.Image = null;
             pictureBox4.Image = null;
@@ -120,6 +120,16 @@ namespace DEALER
         private void btnStand_Click(object sender, EventArgs e) { }
 
         private void pictureBox5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
         {
 
         }

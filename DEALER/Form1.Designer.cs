@@ -2,15 +2,8 @@
 {
     partial class Form1
     {
-        /// <summary>
-        ///  Required designer variable.
-        /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        /// <summary>
-        ///  Clean up any resources being used.
-        /// </summary>
-        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
         protected override void Dispose(bool disposing)
         {
             if (disposing && (components != null))
@@ -22,67 +15,60 @@
 
         #region Windows Form Designer generated code
 
-        /// <summary>
-        ///  Required method for Designer support - do not modify
-        ///  the contents of this method with the code editor.
-        /// </summary>
         private void InitializeComponent()
         {
-            pictureBox1 = new PictureBox();
-            pictureBox2 = new PictureBox();
-            pictureBox3 = new PictureBox();
+            pictureBoxPlayer1 = new PictureBox();
+            pictureBoxPlayer2 = new PictureBox();
+            pictureBoxDealer1 = new PictureBox();
             btnDraw = new Button();
             btnStand = new Button();
             btnNewGame = new Button();
             lblDealerScore = new Label();
-            label2 = new Label();
-            label3 = new Label();
             lblPlayerScore = new Label();
-            pictureBox4 = new PictureBox();
+            pictureBoxDealer2 = new PictureBox();
             btnShuffle = new Button();
-            pictureBox5 = new PictureBox();
-            pictureBox6 = new PictureBox();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
+            pictureBoxDraw = new PictureBox();
+            pictureBoxDeck = new PictureBox();
+            btnHandPlayer = new Button();
+            btnHandDealer = new Button();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlayer1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlayer2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDealer1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDealer2).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDraw).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDeck).BeginInit();
             SuspendLayout();
             // 
-            // pictureBox1
+            // pictureBoxPlayer1
             // 
-            pictureBox1.Location = new Point(449, 12);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(197, 257);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 0;
-            pictureBox1.TabStop = false;
-            pictureBox1.Click += pictureBox1_Click_1;
+            pictureBoxPlayer1.Location = new Point(449, 12);
+            pictureBoxPlayer1.Name = "pictureBoxPlayer1";
+            pictureBoxPlayer1.Size = new Size(197, 257);
+            pictureBoxPlayer1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxPlayer1.TabIndex = 0;
+            pictureBoxPlayer1.TabStop = false;
             // 
-            // pictureBox2
+            // pictureBoxPlayer2
             // 
-            pictureBox2.Location = new Point(703, 12);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(197, 257);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 1;
-            pictureBox2.TabStop = false;
-            pictureBox2.Click += pictureBox2_Click;
+            pictureBoxPlayer2.Location = new Point(703, 12);
+            pictureBoxPlayer2.Name = "pictureBoxPlayer2";
+            pictureBoxPlayer2.Size = new Size(197, 257);
+            pictureBoxPlayer2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxPlayer2.TabIndex = 1;
+            pictureBoxPlayer2.TabStop = false;
             // 
-            // pictureBox3
+            // pictureBoxDealer1
             // 
-            pictureBox3.Location = new Point(703, 371);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(197, 257);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 2;
-            pictureBox3.TabStop = false;
-            pictureBox3.Click += pictureBox3_Click;
+            pictureBoxDealer1.Location = new Point(703, 371);
+            pictureBoxDealer1.Name = "pictureBoxDealer1";
+            pictureBoxDealer1.Size = new Size(197, 257);
+            pictureBoxDealer1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDealer1.TabIndex = 2;
+            pictureBoxDealer1.TabStop = false;
             // 
             // btnDraw
             // 
-            btnDraw.Location = new Point(12, 546);
+            btnDraw.Location = new Point(191, 382);
             btnDraw.Name = "btnDraw";
             btnDraw.Size = new Size(94, 29);
             btnDraw.TabIndex = 6;
@@ -91,7 +77,7 @@
             // 
             // btnStand
             // 
-            btnStand.Location = new Point(12, 511);
+            btnStand.Location = new Point(330, 415);
             btnStand.Name = "btnStand";
             btnStand.Size = new Size(94, 29);
             btnStand.TabIndex = 7;
@@ -101,7 +87,7 @@
             // 
             // btnNewGame
             // 
-            btnNewGame.Location = new Point(12, 581);
+            btnNewGame.Location = new Point(12, 12);
             btnNewGame.Name = "btnNewGame";
             btnNewGame.Size = new Size(94, 29);
             btnNewGame.TabIndex = 8;
@@ -116,26 +102,7 @@
             lblDealerScore.Name = "lblDealerScore";
             lblDealerScore.Size = new Size(50, 20);
             lblDealerScore.TabIndex = 9;
-            lblDealerScore.Text = "label1";
-            lblDealerScore.Click += lblDealerScore_Click;
-            // 
-            // label2
-            // 
-            label2.AutoSize = true;
-            label2.Location = new Point(1189, 351);
-            label2.Name = "label2";
-            label2.Size = new Size(50, 20);
-            label2.TabIndex = 10;
-            label2.Text = "label2";
-            // 
-            // label3
-            // 
-            label3.AutoSize = true;
-            label3.Location = new Point(1189, 294);
-            label3.Name = "label3";
-            label3.Size = new Size(50, 20);
-            label3.TabIndex = 11;
-            label3.Text = "label3";
+            lblDealerScore.Text = "Dealer: 0";
             // 
             // lblPlayerScore
             // 
@@ -144,92 +111,112 @@
             lblPlayerScore.Name = "lblPlayerScore";
             lblPlayerScore.Size = new Size(50, 20);
             lblPlayerScore.TabIndex = 12;
-            lblPlayerScore.Text = "label4";
+            lblPlayerScore.Text = "Player: 0";
             // 
-            // pictureBox4
+            // pictureBoxDealer2
             // 
-            pictureBox4.Location = new Point(449, 371);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(197, 257);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 3;
-            pictureBox4.TabStop = false;
-            pictureBox4.Click += pictureBox4_Click;
+            pictureBoxDealer2.Location = new Point(449, 371);
+            pictureBoxDealer2.Name = "pictureBoxDealer2";
+            pictureBoxDealer2.Size = new Size(197, 257);
+            pictureBoxDealer2.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDealer2.TabIndex = 3;
+            pictureBoxDealer2.TabStop = false;
             // 
             // btnShuffle
             // 
-            btnShuffle.Location = new Point(3, 616);
+            btnShuffle.Location = new Point(191, 439);
             btnShuffle.Name = "btnShuffle";
             btnShuffle.Size = new Size(94, 29);
             btnShuffle.TabIndex = 13;
-            btnShuffle.Text = "shuffle";
+            btnShuffle.Text = "Shuffle";
             btnShuffle.UseVisualStyleBackColor = true;
             // 
-            // pictureBox5
+            // pictureBoxDraw
             // 
-            pictureBox5.Location = new Point(54, 12);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(197, 257);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 14;
-            pictureBox5.TabStop = false;
-            pictureBox5.Click += pictureBox5_Click;
+            pictureBoxDraw.Location = new Point(164, 338);
+            pictureBoxDraw.Name = "pictureBoxDraw";
+            pictureBoxDraw.Size = new Size(143, 179);
+            pictureBoxDraw.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDraw.TabIndex = 14;
+            pictureBoxDraw.TabStop = false;
             // 
-            // pictureBox6
+            // pictureBoxDeck
             // 
-            pictureBox6.Location = new Point(1135, 12);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(197, 257);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 15;
-            pictureBox6.TabStop = false;
+            pictureBoxDeck.Location = new Point(164, 135);
+            pictureBoxDeck.Name = "pictureBoxDeck";
+            pictureBoxDeck.Size = new Size(143, 179);
+            pictureBoxDeck.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBoxDeck.TabIndex = 15;
+            pictureBoxDeck.TabStop = false;
+            // 
+            // btnHandPlayer
+            // 
+            btnHandPlayer.Location = new Point(449, 274);
+            btnHandPlayer.Name = "btnHandPlayer";
+            btnHandPlayer.Size = new Size(94, 29);
+            btnHandPlayer.TabIndex = 16;
+            btnHandPlayer.Text = "Hand card";
+            btnHandPlayer.UseVisualStyleBackColor = true;
+            btnHandPlayer.Click += button1_Click;
+            // 
+            // btnHandDealer
+            // 
+            btnHandDealer.Location = new Point(449, 634);
+            btnHandDealer.Name = "btnHandDealer";
+            btnHandDealer.Size = new Size(94, 29);
+            btnHandDealer.TabIndex = 17;
+            btnHandDealer.Text = "Hand card";
+            btnHandDealer.UseVisualStyleBackColor = true;
+            btnHandDealer.Click += button1_Click_1;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1344, 721);
-            Controls.Add(pictureBox6);
-            Controls.Add(pictureBox5);
+            Controls.Add(btnHandDealer);
+            Controls.Add(btnHandPlayer);
+            Controls.Add(pictureBoxDeck);
             Controls.Add(btnShuffle);
             Controls.Add(lblPlayerScore);
-            Controls.Add(label3);
-            Controls.Add(label2);
             Controls.Add(lblDealerScore);
             Controls.Add(btnNewGame);
             Controls.Add(btnStand);
             Controls.Add(btnDraw);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
-            Controls.Add(pictureBox2);
-            Controls.Add(pictureBox1);
+            Controls.Add(pictureBoxDealer2);
+            Controls.Add(pictureBoxDealer1);
+            Controls.Add(pictureBoxPlayer2);
+            Controls.Add(pictureBoxPlayer1);
+            Controls.Add(pictureBoxDraw);
             Name = "Form1";
-            Text = "Form1";
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
+            Text = "Blackjack Dealer";
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlayer1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxPlayer2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDealer1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDealer2).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDraw).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBoxDeck).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
 
         #endregion
 
-        private PictureBox pictureBox1;
-        private PictureBox pictureBox2;
-        private PictureBox pictureBox3;
+        private PictureBox pictureBoxPlayer1;
+        private PictureBox pictureBoxPlayer2;
+        private PictureBox pictureBoxDealer1;  
+        private PictureBox pictureBoxDealer2;     
+        private PictureBox pictureBoxDraw;
+        private PictureBox pictureBoxDeck;
         private Button btnDraw;
         private Button btnStand;
         private Button btnNewGame;
-        private Label lblDealerScore;
-        private Label label2;
-        private Label label3;
-        private Label lblPlayerScore;
-        private PictureBox pictureBox4;
         private Button btnShuffle;
-        private PictureBox pictureBox5;
-        private PictureBox pictureBox6;
+        private Button btnHandPlayer;
+        private Button btnHandDealer;     
+        private Label lblDealerScore;     
+        private Label lblPlayerScore;
+
+
     }
 }
